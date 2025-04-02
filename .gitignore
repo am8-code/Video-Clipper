@@ -1,1 +1,4 @@
 ytenv/
+*.mp4
+.DS_Store
+downloads/
