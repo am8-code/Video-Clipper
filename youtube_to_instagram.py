@@ -27,7 +27,7 @@ class YouTubeMarketingGenerator:
         # Initialize parameters
         self.clip_duration = clip_duration
         
-        # Create downloads directory if it doesn't exist
+        # Create downloads directory 
         os.makedirs('downloads', exist_ok=True)
         
         # Load text generation model
@@ -75,7 +75,7 @@ class YouTubeMarketingGenerator:
     
     def generate_marketing_caption(self) -> str:
         """
-        Generate a creative marketing caption using AI.
+        Generate a creative marketing caption
         
         Returns:
             str: Generated marketing caption
@@ -111,7 +111,7 @@ class YouTubeMarketingGenerator:
             # Load video clip
             full_clip = VideoFileClip(video_path)
 
-            # Calculate start time (middle of the video)
+            # Calculate start time
             total_duration = full_clip.duration
             start_time = max(0, (total_duration - self.clip_duration) / 2)
     
@@ -172,7 +172,7 @@ def main():
     """
     Main execution function for demonstrating the tool.
     """
-    # A classic example video - replace with any YouTube URL you want
+    # An example video - replace with any YouTube URL you want
     youtube_url = "https://youtu.be/TLKxdTmk-zc?si=vHXFEtw68Rg6ZR7X"
     
     # Create generator instance
